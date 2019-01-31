@@ -27,7 +27,7 @@ namespace Method
                 Console.ReadKey(true);
             }
             
-            //Recall catch to end program
+            //Recall catch to end program if wrong data type entered
             catch
             {
                 Console.WriteLine("Please only enter your name...");
@@ -36,11 +36,12 @@ namespace Method
             }
         }
 
+        //create custom method to print greeting to a user 
         private static void Print_Greeting(int user_name)
         {
+            //Print greeting to user
             Console.WriteLine(" ");
-            Console.WriteLine("Hello " + user_name.ToString());
-
+            Console.WriteLine("Hello " + user_name.ToString();
         }
     }
 }
