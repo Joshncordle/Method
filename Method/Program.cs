@@ -27,7 +27,6 @@ namespace Method
                 Console.ReadKey(true);
             }
             
-
             //Recall catch to end program
             catch
             {
@@ -37,11 +36,11 @@ namespace Method
             }
         }
 
-        //Recall print greeting method to write greeting to user
-
-        private static int Print_Greeting(int user_greeting)
+        private static void Print_Greeting(int user_name)
         {
-           Console.WriteLine("Hello" + user_greeting.ToString());
+            Console.WriteLine(" ");
+            Console.WriteLine("Hello " + user_name.ToString());
+
         }
     }
 }
