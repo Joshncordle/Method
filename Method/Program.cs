@@ -1,4 +1,7 @@
-﻿using System;
+﻿// Author: Joshua Cordle
+// Date: 1/31/2019
+// Comments: Using a method, print a greeting the user using their name
+using System;
 
 namespace Method
 {
@@ -6,7 +9,39 @@ namespace Method
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //Ask for user input
+            Console.WriteLine("Please enter your name");
+
+            //Use try-catch block to confirm user enters data correctly
+            try
+            {
+                //Read and name user input
+                string input = Console.ReadLine();
+                int user_name = int.Parse(input);
+
+                //Use pring greeting method to print greeting to user
+                Print_Greeting(user_name);
+
+                //End the program
+                Console.WriteLine("press any key to exit the program...");
+                Console.ReadKey(true);
+            }
+            
+
+            //Recall catch to end program
+            catch
+            {
+                Console.WriteLine("Please only enter your name...");
+                Console.WriteLine("press any key to exit the program...");
+                Console.ReadKey(true);
+            }
+        }
+
+        //Recall print greeting method to write greeting to user
+
+        private static int Print_Greeting(int user_greeting)
+        {
+           Console.WriteLine("Hello" + user_greeting.ToString());
         }
     }
 }
