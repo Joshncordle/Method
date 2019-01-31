@@ -15,12 +15,11 @@ namespace Method
             //Use try-catch block to confirm user enters data correctly
             try
             {
-                //Read and name user input
-                string input = Console.ReadLine();
-                int user_name = int.Parse(input);
+                //Read user input
+                string user_input = Console.ReadLine();
 
                 //Use pring greeting method to print greeting to user
-                Print_Greeting(user_name);
+                Print_Greeting(user_input);
 
                 //End the program
                 Console.WriteLine("press any key to exit the program...");
@@ -37,11 +36,11 @@ namespace Method
         }
 
         //create custom method to print greeting to a user 
-        private static void Print_Greeting(int user_name)
+        private static void Print_Greeting(string user_input)
         {
             //Print greeting to user
             Console.WriteLine(" ");
-            Console.WriteLine("Hello " + user_name.ToString();
+            Console.WriteLine("Hello " + user_input);
         }
     }
 }
